@@ -42,8 +42,11 @@ python train.py --episodes 500
 ### 2. Run the Demo
 Watch the trained agents navigate.
 ```bash
-# Run with trained model
+# Run with trained model (final)
 python demo.py --model models/ddpg_final
+
+# Run with intermediate checkpoint
+python demo.py --model models/ddpg_model_50
 
 # Run with random initialization (if no model yet)
 python demo.py --model none
